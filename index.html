@@ -11,11 +11,8 @@
 
     <style>
         .active{
-            animation: fadeIn 4s;
+            animation: fadeIn 5s;
         }
-        /* .active2{
-            animation: fadeOut 2s;
-        } */
         @keyframes fadeIn{
             from{
                 opacity: 0;
@@ -46,7 +43,7 @@
         <body>    
             <tr>
                 <td>Mechanics</td>
-                <td><a href="#mechanics" onclick="change()">here</a></td>
+                <td><a href="#mechanics" onclick="change_bg()">here</a></td>
             </tr>
             <tr>
                 <td>Computer Science</td>
@@ -54,7 +51,7 @@
             </tr>
             <tr>
                 <td>Electricity</td>
-                <td><a href="#electricity">here</a></td>
+                <td><a href="#electricity" onclick="fade()">here</a></td>
             </tr>
             <tr>
                 <td>Algebra</td>
@@ -139,9 +136,11 @@
 
     <script>
 
-        function change(){
-            // document.getElementById("mechanics").classList.add("active")
+        function change_bg(){
             document.getElementById("mechanics").classList.add("mark")
+        }
+        function fade(){
+            document.getElementById("electricity").classList.add("active")
         }
     </script>
 
