@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LU SITE</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -43,27 +43,27 @@
         <body>    
             <tr>
                 <td>Mechanics</td>
-                <td><a href="#mechanics" onclick="change_bg()">here</a></td>
+                <td><a href="#mechanics" onclick="change_bg('mechanics')">here</a></td>
             </tr>
             <tr>
                 <td>Computer Science</td>
-                <td><a href="#cs">here</a></td>
+                <td><a href="#cs" onclick="change_bg('cs')">here</a></td>
             </tr>
             <tr>
                 <td>Electricity</td>
-                <td><a href="#electricity" onclick="fade()">here</a></td>
+                <td><a href="#electricity" onclick="change_bg('electricity')"">here</a></td>
             </tr>
             <tr>
                 <td>Algebra</td>
-                <td><a href="#algebra">here</a></td>
+                <td><a href="#algebra" onclick="change_bg('algebra')">here</a></td>
             </tr>
             <tr>
                 <td>Analysis</td>
-                <td><a href="#analysis">here</a></td>
+                <td><a href="#analysis" onclick="change_bg('analysis')">here</a></td>
             </tr>
             <tr>
                 <td>Chemestry</td>
-                <td><a href="#chemestry">here</a></td>
+                <td><a href="#chemestry" onclick="change_bg('chemestry')">here</a></td>
             </tr>
         </body>
 
@@ -136,11 +136,12 @@
 
     <script>
 
-        function change_bg(){
-            document.getElementById("mechanics").classList.add("mark")
-        }
-        function fade(){
-            document.getElementById("electricity").classList.add("active")
+        function change_bg(id){
+            
+            const marked_sections = document.querySelectorAll(".mark");
+            marked_sections.forEach(marked_section => {marked_section.classList.remove("mark")})
+            
+            document.getElementById(id).classList.add("mark")
         }
     </script>
 
