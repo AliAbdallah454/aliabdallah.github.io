@@ -10,23 +10,13 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <style>
-        .active{
-            animation: fadeIn 5s;
-        }
-        @keyframes fadeIn{
-            from{
-                opacity: 0;
-            }
-            to{
-                opacity: 1;
-            }
-        }
-        .mark{
-            background-color: grey;
+        section{
+            min-height: 10000px;
         }
     </style>
 
 </head>
+
 <body>
 
     <h1>WELCOME TO ULFG STUDENTS SITE</h1>
@@ -43,39 +33,31 @@
         <body>    
             <tr>
                 <td>Mechanics</td>
-                <!-- <td><a href="#mechanics" onclick="change_bg('mechanics')">here</a></td> -->
                 <td><button type="button" class="btn btn-primary" onclick="navigate('mechanics')"></button></td>
             </tr>
             <tr>
                 <td>Computer Science</td>
-                <!-- <td><a href="#cs" onclick="change_bg('cs')">here</a></td> -->
                 <td><button type="button" class="btn btn-secondary" onclick="navigate('cs')"></button></td>
             </tr>
             <tr>
                 <td>Electricity</td>
-                <!-- <td><a href="#electricity" onclick="change_bg('electricity')"">here</a></td> -->
                 <td><button type="button" class="btn btn-success" onclick="navigate('electricity')"></button></td>
             </tr>
             <tr>
                 <td>Algebra</td>
-                <!-- <td><a href="#algebra" onclick="change_bg('algebra')">here</a></td> -->
                 <td><button type="button" class="btn btn-danger" onclick="navigate('algebra')"></button></td>
             </tr>
             <tr>
                 <td>Analysis</td>
-                <!-- <td><a href="#analysis" onclick="change_bg('analysis')">here</a></td> -->
                 <td><button type="button" class="btn btn-dark" onclick="navigate('analysis')"></button></td>
             </tr>
             <tr>
                 <td>Chemestry</td>
-                <!-- <td><a href="#chemestry" onclick="change_bg('chemestry')">here</a></td> -->
                 <td><button type="button" class="btn btn-warning" onclick="navigate('chemestry')"></button></td>
             </tr>
         </body>
 
     </table>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <section id="mechanics">
         <h2>Mechanics</h2>
@@ -88,8 +70,6 @@
         <button type="button" class="btn btn-outline-dark" onclick="navigate('table')">return</button>
 
     </section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <section id="cs">
         <h2>Computer Science</h2>
@@ -114,8 +94,6 @@
 
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
     <section id="electricity">
         <h2>Electricity</h2>
 
@@ -127,8 +105,6 @@
         <button type="button" class="btn btn-outline-dark" onclick="navigate('table')">return</button>
 
     </section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <section id="algebra">
         <h2>Algebra</h2>
@@ -142,8 +118,6 @@
 
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
     <section id="analysis">
         <h2>Analysis</h2>
 
@@ -156,7 +130,6 @@
 
     </section>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <section id="chemestry">
         <h2>Chemestry</h2>
@@ -172,16 +145,8 @@
 
     <script>
 
-        function change_bg(id){
-            
-            const marked_sections = document.querySelectorAll(".mark");
-            marked_sections.forEach(marked_section => {marked_section.classList.remove("mark")})
-            document.getElementById(id).classList.add("mark");
-        }
-
         function navigate(id){    
             location.href = "#" + id;
-            // change_bg(id);
         }
 
     </script>
