@@ -19,46 +19,52 @@
 
 <body>
 
-    <h1>WELCOME TO ULFG STUDENTS SITE</h1>
+    <div class="container text-center">
+        <h1>WELCOME TO ULFG STUDENTS SITE</h1>
+    </div>
 
     <section>
-        <table class="table" id="table">
+        
+        <div class="container text-center">
+            <table class="table" id="table">
             
-            <head>
-                <tr>
-                    <th>Material</th>
-                    <th>Link</th>
-                </tr>
-            </head>
+                <head>
+                    <tr>
+                        <th>Material</th>
+                        <th>Link</th>
+                    </tr>
+                </head>
+    
+                <body>    
+                    <tr>
+                        <td>Mechanics</td>
+                        <td><button type="button" class="btn btn-primary" onclick="navigate('mechanics')"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Computer Science</td>
+                        <td><button type="button" class="btn btn-secondary" onclick="navigate('cs')"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Electricity</td>
+                        <td><button type="button" class="btn btn-success" onclick="navigate('electricity')"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Algebra</td>
+                        <td><button type="button" class="btn btn-danger" onclick="navigate('algebra')"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Analysis</td>
+                        <td><button type="button" class="btn btn-dark" onclick="navigate('analysis')"></button></td>
+                    </tr>
+                    <tr>
+                        <td>Chemistry</td>
+                        <td><button type="button" class="btn btn-warning" onclick="navigate('chemestry')"></button></td>
+                    </tr>
+                </body>
+    
+            </table>
+        </div>
 
-            <body>    
-                <tr>
-                    <td>Mechanics</td>
-                    <td><button type="button" class="btn btn-primary" onclick="navigate('mechanics')"></button></td>
-                </tr>
-                <tr>
-                    <td>Computer Science</td>
-                    <td><button type="button" class="btn btn-secondary" onclick="navigate('cs')"></button></td>
-                </tr>
-                <tr>
-                    <td>Electricity</td>
-                    <td><button type="button" class="btn btn-success" onclick="navigate('electricity')"></button></td>
-                </tr>
-                <tr>
-                    <td>Algebra</td>
-                    <td><button type="button" class="btn btn-danger" onclick="navigate('algebra')"></button></td>
-                </tr>
-                <tr>
-                    <td>Analysis</td>
-                    <td><button type="button" class="btn btn-dark" onclick="navigate('analysis')"></button></td>
-                </tr>
-                <tr>
-                    <td>Chemestry</td>
-                    <td><button type="button" class="btn btn-warning" onclick="navigate('chemestry')"></button></td>
-                </tr>
-            </body>
-
-        </table>
     </section>
 
     <section id="mechanics">
@@ -133,7 +139,7 @@
     </section>
 
 
-    <section id="chemestry">
+    <section id="chemistry">
         <h2>Chemestry</h2>
 
         <ul>
