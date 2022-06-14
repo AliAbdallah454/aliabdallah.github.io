@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body class="bg-dark">
 
     <div class="container text-center">
         <h1>WELCOME TO ULFG STUDENTS SITE</h1>
@@ -25,17 +25,71 @@
 
     <section>
         
-        <div class="container text-center">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+                
+                <table class="table text-white" id="table">
+            
+                    <thead>
+                        <tr>
+                            <th>Material</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>    
+                        <tr>
+                            <td>Mechanics</td>
+                            <td><button type="button" class="btn btn-primary" onclick="navigate('mechanics')"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Computer Science</td>
+                            <td><button type="button" class="btn btn-secondary" onclick="navigate('cs')"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Electricity</td>
+                            <td><button type="button" class="btn btn-success" onclick="navigate('electricity')"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Algebra</td>
+                            <td><button type="button" class="btn btn-danger" onclick="navigate('algebra')"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Analysis</td>
+                            <td><button type="button" class="btn btn-dark" onclick="navigate('analysis')"></button></td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td><button type="button" class="btn btn-warning" onclick="navigate('chemistry')"></button></td>
+                        </tr>
+                    </tbody>
+        
+                </table>
+
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+
+        <!-- <div class="container mx-auto">
             <table class="table" id="table">
             
-                <head>
+                <thead>
                     <tr>
                         <th>Material</th>
                         <th>Link</th>
                     </tr>
-                </head>
+                </thead>
     
-                <body>    
+                <tbody>    
                     <tr>
                         <td>Mechanics</td>
                         <td><button type="button" class="btn btn-primary" onclick="navigate('mechanics')"></button></td>
@@ -60,12 +114,12 @@
                         <td>Chemistry</td>
                         <td><button type="button" class="btn btn-warning" onclick="navigate('chemistry')"></button></td>
                     </tr>
-                </body>
+                </tbody>
     
             </table>
         </div>
 
-    </section>
+    </section> -->
 
     <section id="mechanics">
 
